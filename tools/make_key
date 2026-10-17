@@ -76,3 +76,8 @@ fi
 
 wait
 wait
+
+rm -rf "${tmpdir}"
+trap - EXIT INT QUIT
+exit 0
+
